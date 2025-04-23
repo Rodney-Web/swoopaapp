@@ -171,7 +171,7 @@ export default function Home() {
   const renderProductsEmpty = () => {
     return (
       <View style={styles.emptyProducts}>
-        <Icon name="alert-circle" size={50} color="red" />
+        <Icon name="alert-circle" size={50} color="yellowgreen" />
         <Text style={[styles.size18, styles.grey]}>
           No more products available
         </Text>

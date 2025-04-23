@@ -83,6 +83,7 @@ export const ProductsProvider = ({...rest}) => {
   // Pull-to-refresh
   const handleRefresh = useCallback(async () => {
     setRefreshing(true);
+    setCurrentPage(1);
     await fetchProducts(true); // Refresh from the first page
   }, [fetchProducts]);
 
