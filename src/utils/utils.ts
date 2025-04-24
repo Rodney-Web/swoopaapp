@@ -1,5 +1,4 @@
-import {Product} from '../api/api';
-import {Category} from '../screens/Home/Home';
+import {Category, Product} from '../types/types';
 
 export const categories: Category[] = [
   {

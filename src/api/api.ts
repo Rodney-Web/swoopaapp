@@ -1,23 +1,4 @@
-export interface Product {
-  id: string;
-  name: string;
-  price: number;
-  category: 'Garden' | 'Clothing' | 'Household' | null;
-  distanceInKm: number;
-  postedAt: string;
-  dealType: 'SALE' | 'REGULAR';
-  imageUrl: string;
-}
-
-interface PaginatedResponse<T> {
-  data: T[];
-  pagination: {
-    currentPage: number;
-    totalPages: number;
-    totalItems: number;
-    itemsPerPage: number;
-  };
-}
+import {PaginatedResponse, Product} from '../types/types';
 
 class ProductsShopAPI {
   private products: Product[] = [
